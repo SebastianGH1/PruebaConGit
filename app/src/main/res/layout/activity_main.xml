@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/rectangulo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#FF0000"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:id="@+id/buttonArriba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arriba"
+            android:layout_below="@+id/rectangulo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/buttonAbajo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abajo"
+            android:layout_below="@+id/buttonArriba"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/buttonIzquierda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Izquierda"
+            android:layout_toStartOf="@+id/buttonArriba"
+            android:layout_below="@+id/rectangulo"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/buttonDerecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rectangulo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/buttonArriba"
+            android:text="Derecha" />
+
+        <Button
+            android:id="@+id/buttonCambiarTamaño"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CambiarTamaño"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/buttonAbajo"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/buttonCambiarColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cambiar Color "
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/buttonCambiarTamaño"
+            android:layout_marginTop="20dp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
